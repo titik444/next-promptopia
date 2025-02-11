@@ -23,12 +23,10 @@ export default function UserProfile({ params }) {
   }, [params.id]);
 
   return (
-    <Suspense>
-      <Profile
-        name={userName}
-        desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional prompts and be inspired by the power of their imagination`}
-        data={userPosts}
-      />
-    </Suspense>
+    <Profile
+      name={userName}
+      desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional prompts and be inspired by the power of their imagination`}
+      data={userPosts}
+    />
   );
 }
